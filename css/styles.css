@@ -153,11 +153,22 @@ ul {
 
 /* Герой */
 .hero {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
 
-  background-color: var(--footer-background-color);
-
+  background-color: #c4c4c4;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/herobg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
 }
 

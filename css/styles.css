@@ -8,6 +8,7 @@
   --primary-text-color: #757575;
   --address-text-color: rgba(255, 255, 255, 0.6);
   --button-hover-color: #188ce8;
+  --icon-color: #afb1b8;
 }
 
 body {
@@ -136,15 +137,17 @@ ul {
 .contacts-link:focus .icon-smartphone,
 .contacts-link:hover .icon-envelope,
 .contacts-link:focus .icon-envelope {
-  fill: var(--accent-color);
+  fill: currentColor;
 }
 
 .icon-smartphone {
   margin-right: 10px;
+  fill: var(--primary-text-color);
 }
 
 .icon-envelope {
   margin-right: 10px;
+  fill: var(--primary-text-color);
 }
 
 .list {
@@ -233,6 +236,17 @@ ul {
   margin-right: 30px;
 }
 
+.thumb {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--section-background-color);
+}
+
 /* Чем мы занимаемся */
 .work {
   display: flex;
@@ -272,8 +286,9 @@ ul {
 }
 
 .team-card {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  /* padding-top: 30px;
+  padding-bottom: 30px; */
+  padding: 30px 32px;
   border-radius: 0 0 4px 4px;
 
   background-color: var(--primary-white-color);
@@ -295,9 +310,40 @@ ul {
 }
 
 .job-description {
+  margin-bottom: 16px;
+
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: var(--primary-white-color);
+}
+
+.social-icon {
+  fill: var(--icon-color);
 }
 
 /* Футер */

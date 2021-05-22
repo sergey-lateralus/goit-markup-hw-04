@@ -118,6 +118,8 @@ ul {
 }
 
 .contacts-link {
+  display: flex;
+  align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
 
@@ -128,6 +130,21 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+}
+
+.contacts-link:hover .icon-smartphone,
+.contacts-link:focus .icon-smartphone,
+.contacts-link:hover .icon-envelope,
+.contacts-link:focus .icon-envelope {
+  fill: var(--accent-color);
+}
+
+.icon-smartphone {
+  margin-right: 10px;
+}
+
+.icon-envelope {
+  margin-right: 10px;
 }
 
 .list {
